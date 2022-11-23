@@ -1,11 +1,10 @@
-def test(text):
-    upperThe = text.find("The")
-    lowerThe = text.find("the")
-    if lowerThe > upperThe:
-        print(f"The the is at {upperThe}")
-    else:
-        print(f"The the is at {lowerThe}")
+def theFinder(text):
+    print(f"The 'the' is at: {text.find('the')}")
 
-if __name__ == "__main__":
-    word = input("Enter a word: ")
-    print(test(word))
+word = input("Enter a word: ")
+word = word.lower()
+if word.__contains__('the'):
+    theFinder(word)
+    exit()
+else:
+    print(f"No 'thes' were found!")
