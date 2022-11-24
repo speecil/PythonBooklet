@@ -1,7 +1,7 @@
 def i2eye():
     newtext = oldtext
-    newtexti = oldtext.replace("i", "eye")
-    newtext = newtexti.replace("I", 'Eye')
+    newtextLoweri = oldtext.replace("i", "eye")
+    newtext = newtextLoweri.replace("I", 'Eye')
     return newtext
     
 
