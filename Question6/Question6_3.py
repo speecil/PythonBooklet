@@ -6,4 +6,4 @@ side2 = float(input('Enter the second side: '))
 
 status = ((side1 * side2) * math.sin(math.radians(angle))) / 2
 
-print(f'The area of the triangle is {status} square units.')
+print(f'The area of the triangle is {round(status, 1)} square units.')
